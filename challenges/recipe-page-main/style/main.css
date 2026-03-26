@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-stone-100: hsl(30, 54%, 90%);
+  --clr-stone-150: hsl(30, 18%, 87%);
+  --clr-stone-600: hsl(30, 10%, 34%);
+  --clr-stone-900: hsl(24, 5%, 18%);
+  --clr-brown-800: hsl(14, 45%, 36%);
+  --clr-rose-800: hsl(332, 51%, 32%);
+  --clr-rose-50: hsl(330, 100%, 98%);
+
+  --ff-body: 'Outfit', sans-serif;
+  --ff-heading: 'Young Serif', serif;
+}
+
+body {
+  background-color: var(--clr-stone-100);
+  color: var(--clr-stone-600);
+  font-family: var(--ff-body);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+article {
+  background-color: var(--clr-white);
+  padding: 3rem;
+  border-radius: 2rem;
+  max-width: 44rem;
+}
+
+h1, h2 {
+  font-family: var(--ff-heading);
+}
+
+h1 {
+  color: var(--clr-stone-900);
+}
+
+h2 {
+  color: var(--clr-brown-800);
+}
+
+p {
+  font-size: 1rem;
+}
+
+section {
+  border-bottom: 1px solid var(--clr-stone-100);
+  padding: 1rem;
+}
+section:last-child {
+  border: 0;
+}
+
+img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+ul, ol {
+  padding-left: 1rem;
+}
+
+li {
+  padding-left: 1rem;
+}
+
+.recipe-title {
+  font-family: 'Young Serif';
+}
+
+.preparation-time-container {
+  background-color: var(--clr-rose-50);
+  padding: 1rem;
+}
+
+.preparation-time-container li::marker {
+  color: var(--clr-rose-800);
+}
+
+.preparation-time-title {
+  color: var(--clr-rose-800);
+  font-size: large;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.nutrition-table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+.nutrition-table tr {
+  border-bottom: 1px solid var(--clr-stone-100);
+}
+.nutrition-table tr:last-child {
+  border: 0;
+}
+.nutrition-table th {
+  padding: 1rem;
+}
+.nutrition-table td {
+  padding: 1rem;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
