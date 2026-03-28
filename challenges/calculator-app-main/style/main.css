@@ -71,3 +71,11 @@
   --text-main: hsl(52, 100%, 62%);
   --text-header: hsl(52, 100%, 62%);
 }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
