@@ -1,0 +1,73 @@
+:root {
+  /* Layout & Typography */
+  --font-main: 'League Spartan', sans-serif;
+
+  /* --- 主题 1 (Default) --- */
+  /* Backgrounds */
+  --bg-main: hsl(222, 26%, 31%);
+  --bg-toggle-keypad: hsl(223, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+
+  /* Keys - Normal (数字键) */
+  --key-default-bg: hsl(0, 0%, 90%);
+  --key-default-shadow: hsl(28, 16%, 65%);
+  --key-default-text: hsl(221, 14%, 31%);
+
+  /* Keys - Specialized (DEL/RESET) */
+  --key-special-bg: hsl(225, 21%, 49%);
+  --key-special-shadow: hsl(224, 28%, 35%);
+  --key-special-text: hsl(0, 100%, 100%);
+
+  /* Keys - Accent (等号与 Toggle) */
+  --key-accent-bg: hsl(6, 63%, 50%);
+  --key-accent-shadow: hsl(6, 70%, 34%);
+  --key-accent-text: hsl(0, 100%, 100%);
+
+  /* General Text */
+  --text-main: hsl(0, 100%, 100%);
+  --text-header: hsl(0, 100%, 100%);
+}
+
+/* --- 主题 2 --- */
+[data-theme='2'] {
+  --bg-main: hsl(0, 0%, 90%);
+  --bg-toggle-keypad: hsl(0, 5%, 81%);
+  --bg-screen: hsl(0, 0%, 93%);
+
+  --key-default-bg: hsl(0, 0%, 90%);
+  --key-default-shadow: hsl(35, 11%, 61%);
+  --key-default-text: hsl(60, 10%, 19%);
+
+  --key-special-bg: hsl(185, 42%, 37%);
+  --key-special-shadow: hsl(185, 58%, 25%);
+  --key-special-text: hsl(0, 100%, 100%);
+
+  --key-accent-bg: hsl(25, 98%, 40%);
+  --key-accent-shadow: hsl(25, 99%, 27%);
+  --key-accent-text: hsl(0, 100%, 100%);
+
+  --text-main: hsl(60, 10%, 19%);
+  --text-header: hsl(60, 10%, 19%);
+}
+
+/* --- 主题 3 --- */
+[data-theme='3'] {
+  --bg-main: hsl(268, 75%, 9%);
+  --bg-toggle-keypad: hsl(268, 71%, 12%);
+  --bg-screen: hsl(268, 71%, 12%);
+
+  --key-default-bg: hsl(268, 47%, 21%);
+  --key-default-shadow: hsl(290, 70%, 36%);
+  --key-default-text: hsl(52, 100%, 62%);
+
+  --key-special-bg: hsl(281, 89%, 26%);
+  --key-special-shadow: hsl(285, 91%, 52%);
+  --key-special-text: hsl(0, 100%, 100%);
+
+  --key-accent-bg: hsl(176, 100%, 44%);
+  --key-accent-shadow: hsl(177, 92%, 70%);
+  --key-accent-text: hsl(198, 20%, 13%);
+
+  --text-main: hsl(52, 100%, 62%);
+  --text-header: hsl(52, 100%, 62%);
+}
