@@ -13,97 +13,180 @@
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
-    <main>
-      <div class="container">
-        <div class="extensions-header">
-          <h2>Extensions List</h2>
-          <div>
-            <button>All</button>
-            <button>Active</button>
-            <button>Inactive</button>
+    <div>
+      <header>
+        <div class="container topbar">
+          <div class="brand">
+            <img src="./assets/images/logo.svg" />
           </div>
+          <button class="theme-toggle">
+            <img src="./assets/images/icon-moon.svg">
+          </button>
         </div>
-        <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
-        <ul class="extensions-grid">
-          <li>
-            <div>
-              <div>
-                <img src="./assets/images/logo-devlens.svg" />
-                <div>
-                  <h3>DevLens</h3>
-                  <p>Quickly inspect page layouts and visualize element boundaries.</p>
-                </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="extensions-header">
+            <h2>Extensions List</h2>
+            <div class="header-buttons">
+              <button>All</button>
+              <button>Active</button>
+              <button>Inactive</button>
+            </div>
+          </div>
+          <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+          <ul class="extensions-grid">
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-devlens.svg" />
+              <div class="card-info">
+                <h3>DevLens</h3>
+                <p>Quickly inspect page layouts and visualize element boundaries.</p>
               </div>
-              <label>
+
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
                 <input type="checkbox" />
                 <span class="switch"></span>
               </label>
-              <button>Remove</button>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="./assets/images/logo-style-spy.svg" />
-              <div>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-style-spy.svg" />
+              <div class="card-info">
                 <h3>StyleSpy</h3>
                 <p>Instantly analyze and copy CSS from any webpage element.</p>
               </div>
-            </div>
-            <button>Remove</button>
-          </li>
-          <li>
-            <h3>SpeedBoost</h3>
-            <p>Optimizes browser resource usage to accelerate page loading.</p>
-            <button>Remove</button>
-          </li>
-          <li>
-            <h3>JSONWizard</h3>
-            <p>Formats, validates, and prettifies JSON responses in-browser.</p>
-            <button>Remove</button>
-          </li>
-          <li>
-            <h3>TabMaster Pro</h3>
-            <p>Organizes browser tabs into groups and sessions.</p>
-            <button>Remove</button>
-          </li>
-          <li>
-            <h3>ViewportBuddy</h3>
-            <p>Simulates various screen resolutions directly within the browser.</p>
-            <button>Remove</button>
-          </li>
-          <li>
-            <h3>Markup Notes</h3>
-            <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
-            <button>Remove</button>
-          </li>
-          <li>
-            <h3>GridGuides</h3>
-            <p>Overlay customizable grids and alignment guides on any webpage.</p>
-            <button>Remove</button>
-          </li>
-          <li>
-            <h3>Palette Picker</h3>
-            <p>Instantly extracts color palettes from any webpage.</p>
-            <button>Remove</button>
-          </li>
-          <li>
-            <h3>LinkChecker</h3>
-            <p>Scans and highlights broken links on any page.</p>
-            <button>Remove</button>
-          </li>
-          <li>
-            <h3>DOM Snapshot</h3>
-            <p>Capture and export DOM structures quickly.</p>
-            <button>Remove</button>
-          </li>
-          <li>
-            <h3>ConsolePlus</h3>
-            <p>Enhanced developer console with advanced filtering and logging.</p>
-            <button>Remove</button>
-          </li>
-        </ul>
-      </div>
-    </main>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-speed-boost.svg" />
+              <div class="card-info">
+                <h3>SpeedBoost</h3>
+                <p>Optimizes browser resource usage to accelerate page loading.</p>
+              </div>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-json-wizard.svg" />
+              <div class="card-info">
+                <h3>JSONWizard</h3>
+                <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+              </div>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-tab-master-pro.svg" />
+              <div class="card-info">
+                <h3>TabMaster Pro</h3>
+                <p>Organizes browser tabs into groups and sessions.</p>
+              </div>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-viewport-buddy.svg" />
+              <div class="card-info">
+                <h3>ViewportBuddy</h3>
+                <p>Simulates various screen resolutions directly within the browser.</p>
+              </div>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-markup-notes.svg" />
+              <div class="card-info">
+                <h3>Markup Notes</h3>
+                <p>
+                  Enables annotation and notes directly onto webpages for collaborative debugging.
+                </p>
+              </div>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-grid-guides.svg" />
+              <div class="card-info">
+                <h3>GridGuides</h3>
+                <p>Overlay customizable grids and alignment guides on any webpage.</p>
+              </div>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-palette-picker.svg" />
+              <div class="card-info">
+                <h3>Palette Picker</h3>
+                <p>Instantly extracts color palettes from any webpage.</p>
+              </div>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-link-checker.svg" />
+              <div class="card-info">
+                <h3>LinkChecker</h3>
+                <p>Scans and highlights broken links on any page.</p>
+              </div>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-dom-snapshot.svg" />
+              <div class="card-info">
+                <h3>DOM Snapshot</h3>
+                <p>Capture and export DOM structures quickly.</p>
+              </div>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+            <li class="card">
+              <img class="card-icon" src="./assets/images/logo-console-plus.svg" />
+              <div class="card-info">
+                <h3>ConsolePlus</h3>
+                <p>Enhanced developer console with advanced filtering and logging.</p>
+              </div>
+              <button class="card-remove">Remove</button>
+              <label class="card-toggle">
+                <input type="checkbox" />
+                <span class="switch"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
 
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded
