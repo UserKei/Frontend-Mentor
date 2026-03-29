@@ -72,6 +72,105 @@
   --text-header: hsl(52, 100%, 62%);
 }
 
+body {
+  background-color: var(--bg-main);
+  font-family: 'League Spartan', 'sans-serif';
+  font-weight: 700;
+  color: var(--text-main)
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 540px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-header);
+}
+
+.logo {
+  font-size: 40px;
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: end;
+  gap: 3rem;
+}
+
+.theme-switcher__label {
+  font-size: 15px;
+}
+
+.theme-switcher__control {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.theme-switcher__numbers {
+  display: flex;
+  gap: 20px;
+}
+
+.theme-switcher__thumb {
+  display: inline-block;
+  height: 15px;
+  background-color: var(--bg-toggle-keypad);
+}
+
+.screen {
+  height: 100px;
+  background-color: var(--bg-screen);
+  margin: 26px 0;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
+  gap: 25px;
+  background-color: var(--bg-toggle-keypad);
+}
+
+.key {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 32px;
+  height: 65px;
+  background-color: var(--key-default-bg);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px var(--key-default-shadow);
+  cursor: pointer;
+  color: var(--key-default-text);
+}
+
+.key--specialized {
+  background-color: var(--key-special-bg);
+  box-shadow: 0 5px var(--key-special-shadow);
+  color: var(--key-special-text);
+}
+
+.key--accent {
+  background-color: var(--key-accent-bg);
+  box-shadow: 0 5px var(--key-accent-shadow);
+  color: var(--key-accent-text);
+}
+
+.key--wide {
+  grid-column: span 2;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

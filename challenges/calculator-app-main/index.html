@@ -6,6 +6,12 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Calculator app</title>
 
@@ -13,6 +19,51 @@
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
+    <main>
+      <div class="container">
+        <div class="topbar">
+          <span class="logo">calc</span>
+          <div class="theme-switcher">
+            <span class="theme-switcher__label">THEME</span>
+
+            <div class="theme-switcher__control">
+              <div class="theme-switcher__numbers">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+              </div>
+
+              <button class="theme-switcher__toggle" type="button" aria-label="Change theme">
+                <span class="theme-switcher__thumb"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="screen"></div>
+
+        <div class="keypad">
+          <button class="key">7</button>
+          <button class="key">8</button>
+          <button class="key">9</button>
+          <button class="key key--specialized">DEL</button>
+          <button class="key">4</button>
+          <button class="key">5</button>
+          <button class="key">6</button>
+          <button class="key">+</button>
+          <button class="key">1</button>
+          <button class="key">2</button>
+          <button class="key">3</button>
+          <button class="key">-</button>
+          <button class="key">.</button>
+          <button class="key">0</button>
+          <button class="key">/</button>
+          <button class="key">x</button>
+          <button class="key key--wide key--specialized">RESET</button>
+          <button class="key key--wide key--accent">=</button>
+        </div>
+      </div>
+    </main>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
