@@ -1,5 +1,4 @@
 const screen = document.querySelector('#screen-numbers');
-const keypad = document.querySelector('.keypad');
 
 let currentValue = '0';
 let previousValue = '0';
@@ -9,6 +8,7 @@ let shouldResetScreen = false;
 function render() {
   screen.textContent = currentValue;
 }
+render();
 
 function calculate(previousValue, operator, currentValue) {
   const left = Number(previousValue);
@@ -35,8 +35,6 @@ function calculate(previousValue, operator, currentValue) {
   }
   return result.toString();
 }
-
-render();
 
 function handleInput(value) {
   // Number or Dot
@@ -121,4 +119,46 @@ function handleEquals() {
   shouldResetScreen = true;
 }
 
+document.querySelector('.keypad').addEventListener('click', (e) => {
+  if (e.target.matches('.key')) {
+    handleInput(e.target.textContent)
+  }
+})
 
+function handleKeyboradInput(e) {
+  // console.log(e.key);
+  // console.log(typeof e.key);
+  handleInput(mapKeyboradInput(e))
+}
+
+function mapKeyboradInput(e) {
+  const key = e.key;
+
+  if (key >= '0' && key <= '9') {
+    return key;
+  }
+
+  if (key === '.') {
+    return key;
+  }
+
+  if (key === '+' || key === '-' || key === '*' || key === '/') {
+    return key;
+  }
+
+  if (key === "Escape") {
+    return 'RESET';
+  }
+
+  if (key === 'Enter') {
+    return '=';
+  }
+
+  if (key === 'Backspace') {
+    return 'DEL';
+  }
+
+  return undefined;
+}
+
+document.addEventListener('keydown', handleKeyboradInput)
