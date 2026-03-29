@@ -15,8 +15,15 @@ function saveState() {
   localStorage.setItem('data', JSON.stringify(data));
 }
 
-function renderComments(comments) {}
+function renderComments(comments) {
+  const container = document.querySelector('#commets')
+}
 
 function renderCurrentUser(user) {}
+
+function createdComment(comment) {
+  // const element = document.createElement('li')
+  // element.children.push(document.createElement(''))
+}
 
 getInitialData();
