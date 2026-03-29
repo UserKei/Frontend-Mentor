@@ -15,4 +15,8 @@ function saveState() {
   localStorage.setItem('data', JSON.stringify(data));
 }
 
+function renderComments(comments) {}
+
+function renderCurrentUser(user) {}
+
 getInitialData();
