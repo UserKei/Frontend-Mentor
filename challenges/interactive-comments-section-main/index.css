@@ -13,6 +13,71 @@
   --color-white: hsl(0, 100%, 100%);
 }
 
+body {
+  background-color: var(--color-grey-50);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: var(--color-grey-500);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main ol {
+  list-style-type: none;
+}
+
+.container {
+  width: 850px;
+}
+
+.comment__card {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.score__container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  gap: 10px;
+  text-align: center;
+  justify-content: flex-start;
+  background-color: var(--color-grey-100);
+  margin: 0 1rem;
+  color: var(--color-purple-600);
+  border-radius: 10px;
+}
+
+.score__plus ,.score__minus {
+  color: var(--color-purple-200);
+}
+
+.usermeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.username {
+  color: var(--color-grey-800);
+}
+
+.avatar {
+  width: 32px;
+}
+
+.replying-to {
+  color: var(--color-purple-600);
+  margin-right: 10px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

@@ -17,6 +17,14 @@ function saveState() {
 
 function renderComments(comments) {
   const container = document.querySelector('#comments');
+  const list = document.createElement('ol');
+  list.classList = 'comment__list';
+
+  comments.forEach((comment) => {
+    list.appendChild(createCommentElement(comment, { currentUser: data.currentUser }));
+  });
+
+  container.appendChild(list);
 }
 
 function renderCurrentUser(user) {}
@@ -32,9 +40,25 @@ function createCommentElement(comment, options = {}) {
   const card = document.createElement('div');
   card.className = 'comment__card';
 
-  const score = document.createElement('div');
-  score.className = 'comment_score';
+  const score__container = document.createElement('div');
+  score__container.className = 'score__container';
+  // score.textContent = comment.score;
+
+  const score__plus = document.createElement('span');
+  score__plus.className = 'score__plus';
+  score__plus.textContent = '+';
+
+  const score = document.createElement('span');
+  score.className = 'score';
   score.textContent = comment.score;
+
+  const score__minus = document.createElement('span');
+  score__minus.className = 'score__minus';
+  score__minus.textContent = '-';
+
+  score__container.appendChild(score__plus);
+  score__container.appendChild(score);
+  score__container.appendChild(score__minus);
 
   const main = document.createElement('div');
   main.className = 'comment__main';
@@ -47,7 +71,7 @@ function createCommentElement(comment, options = {}) {
 
   const avatar = document.createElement('img');
   avatar.className = 'avatar';
-  avatar.src = comment.user.image.webp;
+  avatar.src = comment.user.image.png;
 
   const username = document.createElement('span');
   username.className = 'username';
@@ -55,7 +79,7 @@ function createCommentElement(comment, options = {}) {
 
   usermeta.appendChild(avatar);
   usermeta.appendChild(username);
-  if (currentUser) {
+  if (isCurrentUser) {
     const badge = document.createElement('span');
     badge.className = 'comment__badge';
     badge.textContent = 'you';
@@ -74,22 +98,29 @@ function createCommentElement(comment, options = {}) {
   header.appendChild(usermeta);
   header.appendChild(actions);
 
-  const content = document.createElement('p');
-  if (isReply) {
-    content.textContent = `@${comment.replyingTo} ${comment.content}`;
-  } else {
-    content.textContent = comment.content;
-  }
+  const content__container = document.createElement('p');
+  content__container.className = 'content__container';
+  const content = document.createElement('span');
+  content.textContent = comment.content;
 
   main.appendChild(header);
-  main.appendChild(content);
+  if (isReply) {
+    // content.textContent = `@${comment.replyingTo} ${comment.content}`;
+    const replyingTo = document.createElement('span');
+    replyingTo.textContent = `@${comment.replyingTo}`;
+    replyingTo.className = 'replying-to';
+    content__container.appendChild(replyingTo)
+  }
+  // main.appendChild(content);
+  content__container.appendChild(content)
+  main.appendChild(content__container)
 
-  card.append(score);
+  card.append(score__container);
   card.append(main);
 
   item.appendChild(card);
 
-  if (comment.replies.length) {
+  if (comment.hasOwnProperty('replies') && comment.replies.length) {
     item.appendChild(createRepliesElement(comment.replies));
   }
 
@@ -101,10 +132,15 @@ function createRepliesElement(replies) {
   item.className = 'replies';
 
   replies.forEach((reply) => {
-    item.appendChild(createCommentElement(reply, { currentUser, isReply: true }));
+    item.appendChild(createCommentElement(reply, { currentUser: data.currentUser, isReply: true }));
   });
 
   return item;
 }
 
-getInitialData();
+async function init() {
+  await getInitialData();
+  renderComments(data.comments);
+}
+
+init();
