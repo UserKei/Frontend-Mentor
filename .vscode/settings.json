@@ -15,5 +15,13 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code", // 强制 Dart 插件接管，不走 Prettier
+    "editor.formatOnSave": true,                     // 专门为 Dart 开启保存自动格式化
+    "editor.formatOnType": true,                     // 输入末尾分号时自动触发格式化
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
   }
 }
