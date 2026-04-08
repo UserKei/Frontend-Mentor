@@ -2,10 +2,15 @@
   "name": "frontend-mentor-workspace",
   "private": true,
   "scripts": {
+    "prepare": "husky",
     "format": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format:check": "prettier . --check",
+    "check:flutter": "cd flutter/recipe_page && flutter analyze && flutter test",
+    "check:ios": "xcodebuild -project ios/RecipePage/RecipePage.xcodeproj -scheme RecipePage -configuration Debug -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO -derivedDataPath /tmp/RecipePage-deriveddata build",
+    "precommit:format": "sh scripts/pre-commit.sh"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "prettier": "^3.0.0"
   }
 }
