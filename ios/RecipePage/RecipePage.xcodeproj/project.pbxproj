@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		AAD180472F86718F00D5A08C /* RecipePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD1805E2F86745B00D5A08C /* RecipePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		AAD180492F86718F00D5A08C /* RecipePage */ = {
+		AAD180602F86745B00D5A08C /* RecipePage */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RecipePage;
 			sourceTree = "<group>";
@@ -19,7 +19,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AAD180442F86718F00D5A08C /* Frameworks */ = {
+		AAD1805B2F86745B00D5A08C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AAD1803E2F86718E00D5A08C = {
+		AAD180552F86745B00D5A08C = {
 			isa = PBXGroup;
 			children = (
-				AAD180492F86718F00D5A08C /* RecipePage */,
-				AAD180482F86718F00D5A08C /* Products */,
+				AAD180602F86745B00D5A08C /* RecipePage */,
+				AAD1805F2F86745B00D5A08C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AAD180482F86718F00D5A08C /* Products */ = {
+		AAD1805F2F86745B00D5A08C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAD180472F86718F00D5A08C /* RecipePage.app */,
+				AAD1805E2F86745B00D5A08C /* RecipePage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AAD180462F86718F00D5A08C /* RecipePage */ = {
+		AAD1805D2F86745B00D5A08C /* RecipePage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAD180522F86719000D5A08C /* Build configuration list for PBXNativeTarget "RecipePage" */;
+			buildConfigurationList = AAD180692F86745C00D5A08C /* Build configuration list for PBXNativeTarget "RecipePage" */;
 			buildPhases = (
-				AAD180432F86718F00D5A08C /* Sources */,
-				AAD180442F86718F00D5A08C /* Frameworks */,
-				AAD180452F86718F00D5A08C /* Resources */,
+				AAD1805A2F86745B00D5A08C /* Sources */,
+				AAD1805B2F86745B00D5A08C /* Frameworks */,
+				AAD1805C2F86745B00D5A08C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				AAD180492F86718F00D5A08C /* RecipePage */,
+				AAD180602F86745B00D5A08C /* RecipePage */,
 			);
 			name = RecipePage;
 			packageProductDependencies = (
 			);
 			productName = RecipePage;
-			productReference = AAD180472F86718F00D5A08C /* RecipePage.app */;
+			productReference = AAD1805E2F86745B00D5A08C /* RecipePage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AAD1803F2F86718E00D5A08C /* Project object */ = {
+		AAD180562F86745B00D5A08C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					AAD180462F86718F00D5A08C = {
+					AAD1805D2F86745B00D5A08C = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
 			};
-			buildConfigurationList = AAD180422F86718E00D5A08C /* Build configuration list for PBXProject "RecipePage" */;
+			buildConfigurationList = AAD180592F86745B00D5A08C /* Build configuration list for PBXProject "RecipePage" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = AAD1803E2F86718E00D5A08C;
+			mainGroup = AAD180552F86745B00D5A08C;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = AAD180482F86718F00D5A08C /* Products */;
+			productRefGroup = AAD1805F2F86745B00D5A08C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAD180462F86718F00D5A08C /* RecipePage */,
+				AAD1805D2F86745B00D5A08C /* RecipePage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AAD180452F86718F00D5A08C /* Resources */ = {
+		AAD1805C2F86745B00D5A08C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AAD180432F86718F00D5A08C /* Sources */ = {
+		AAD1805A2F86745B00D5A08C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AAD180502F86719000D5A08C /* Debug */ = {
+		AAD180672F86745C00D5A08C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -188,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		AAD180512F86719000D5A08C /* Release */ = {
+		AAD180682F86745C00D5A08C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +244,7 @@
 			};
 			name = Release;
 		};
-		AAD180532F86719000D5A08C /* Debug */ = {
+		AAD1806A2F86745C00D5A08C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -271,7 +271,7 @@
 			};
 			name = Debug;
 		};
-		AAD180542F86719000D5A08C /* Release */ = {
+		AAD1806B2F86745C00D5A08C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -301,25 +301,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAD180422F86718E00D5A08C /* Build configuration list for PBXProject "RecipePage" */ = {
+		AAD180592F86745B00D5A08C /* Build configuration list for PBXProject "RecipePage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAD180502F86719000D5A08C /* Debug */,
-				AAD180512F86719000D5A08C /* Release */,
+				AAD180672F86745C00D5A08C /* Debug */,
+				AAD180682F86745C00D5A08C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAD180522F86719000D5A08C /* Build configuration list for PBXNativeTarget "RecipePage" */ = {
+		AAD180692F86745C00D5A08C /* Build configuration list for PBXNativeTarget "RecipePage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAD180532F86719000D5A08C /* Debug */,
-				AAD180542F86719000D5A08C /* Release */,
+				AAD1806A2F86745C00D5A08C /* Debug */,
+				AAD1806B2F86745C00D5A08C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AAD1803F2F86718E00D5A08C /* Project object */;
+	rootObject = AAD180562F86745B00D5A08C /* Project object */;
 }

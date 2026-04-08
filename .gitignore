@@ -22,6 +22,12 @@ build/
 .output/
 .astro/
 .vercel/
+DerivedData/
+
+# Xcode / iOS
+**/.swiftpm/
+**/xcuserdata/
+ios/RecipePage/build/
 
 # Logs
 *.log
