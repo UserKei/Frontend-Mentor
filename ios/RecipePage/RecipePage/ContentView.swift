@@ -9,47 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    HStack {
-      DayForcast(day: "Mon", isRainy: false, high: 70, low: 50)
-      DayForcast(day: "Tun", isRainy: true, high: 60, low: 40)
-    }
-  }
-}
-
-struct DayForcast: View {
-  let day: String
-  let isRainy: Bool
-  let high: Int
-  let low: Int
-
-  var iconName: String {
-    if isRainy {
-      return "cloud.rain.fill"
-    } else {
-      return "sun.max.fill"
-    }
-  }
-
-  var iconColor: Color {
-    if isRainy {
-      return Color.blue
-    } else {
-      return Color.yellow
-    }
-  }
-
-  var body: some View {
     VStack {
-      Text(day)
-        .font(Font.headline)
-      Image(systemName: iconName)
-        .foregroundStyle(iconColor)
-        .font(Font.largeTitle)
-        .padding()
-      Text("High: \(high)")
-      Text("Low: \(low)")
+      ZStack {
+        RoundedRectangle(cornerRadius: 30)
+          .frame(width: 150, height: 150)
+          .foregroundStyle(Color.blue)
+
+        Image(systemName: "figure.2.and.child.holdinghands")
+          .font(.system(size: 60))
+          .foregroundStyle(Color.white)
+      }
+
+      Text("Welcome to My App")
+        .font(.title)
+        .fontWeight(.semibold)
+
+      Text("Description text")
+        .font(.title2)
+
     }
     .padding()
+
   }
 }
 
