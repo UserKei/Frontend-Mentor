@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		AAD1805E2F86745B00D5A08C /* RecipePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA79CA5B2F88C03800AFFA19 /* DiceRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		AAD180602F86745B00D5A08C /* RecipePage */ = {
+		AA79CA5D2F88C03800AFFA19 /* DiceRoller */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RecipePage;
+			path = DiceRoller;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AAD1805B2F86745B00D5A08C /* Frameworks */ = {
+		AA79CA582F88C03800AFFA19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AAD180552F86745B00D5A08C = {
+		AA79CA522F88C03800AFFA19 = {
 			isa = PBXGroup;
 			children = (
-				AAD180602F86745B00D5A08C /* RecipePage */,
-				AAD1805F2F86745B00D5A08C /* Products */,
+				AA79CA5D2F88C03800AFFA19 /* DiceRoller */,
+				AA79CA5C2F88C03800AFFA19 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AAD1805F2F86745B00D5A08C /* Products */ = {
+		AA79CA5C2F88C03800AFFA19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAD1805E2F86745B00D5A08C /* RecipePage.app */,
+				AA79CA5B2F88C03800AFFA19 /* DiceRoller.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AAD1805D2F86745B00D5A08C /* RecipePage */ = {
+		AA79CA5A2F88C03800AFFA19 /* DiceRoller */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAD180692F86745C00D5A08C /* Build configuration list for PBXNativeTarget "RecipePage" */;
+			buildConfigurationList = AA79CA662F88C03900AFFA19 /* Build configuration list for PBXNativeTarget "DiceRoller" */;
 			buildPhases = (
-				AAD1805A2F86745B00D5A08C /* Sources */,
-				AAD1805B2F86745B00D5A08C /* Frameworks */,
-				AAD1805C2F86745B00D5A08C /* Resources */,
+				AA79CA572F88C03800AFFA19 /* Sources */,
+				AA79CA582F88C03800AFFA19 /* Frameworks */,
+				AA79CA592F88C03800AFFA19 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				AAD180602F86745B00D5A08C /* RecipePage */,
+				AA79CA5D2F88C03800AFFA19 /* DiceRoller */,
 			);
-			name = RecipePage;
+			name = DiceRoller;
 			packageProductDependencies = (
 			);
-			productName = RecipePage;
-			productReference = AAD1805E2F86745B00D5A08C /* RecipePage.app */;
+			productName = DiceRoller;
+			productReference = AA79CA5B2F88C03800AFFA19 /* DiceRoller.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AAD180562F86745B00D5A08C /* Project object */ = {
+		AA79CA532F88C03800AFFA19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					AAD1805D2F86745B00D5A08C = {
+					AA79CA5A2F88C03800AFFA19 = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
 			};
-			buildConfigurationList = AAD180592F86745B00D5A08C /* Build configuration list for PBXProject "RecipePage" */;
+			buildConfigurationList = AA79CA562F88C03800AFFA19 /* Build configuration list for PBXProject "DiceRoller" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = AAD180552F86745B00D5A08C;
+			mainGroup = AA79CA522F88C03800AFFA19;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = AAD1805F2F86745B00D5A08C /* Products */;
+			productRefGroup = AA79CA5C2F88C03800AFFA19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAD1805D2F86745B00D5A08C /* RecipePage */,
+				AA79CA5A2F88C03800AFFA19 /* DiceRoller */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AAD1805C2F86745B00D5A08C /* Resources */ = {
+		AA79CA592F88C03800AFFA19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AAD1805A2F86745B00D5A08C /* Sources */ = {
+		AA79CA572F88C03800AFFA19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AAD180672F86745C00D5A08C /* Debug */ = {
+		AA79CA642F88C03900AFFA19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -188,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		AAD180682F86745C00D5A08C /* Release */ = {
+		AA79CA652F88C03900AFFA19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +244,7 @@
 			};
 			name = Release;
 		};
-		AAD1806A2F86745C00D5A08C /* Debug */ = {
+		AA79CA672F88C03900AFFA19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -263,7 +263,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.userkei.RecipePage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.userkei.DiceRoller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -271,7 +271,7 @@
 			};
 			name = Debug;
 		};
-		AAD1806B2F86745C00D5A08C /* Release */ = {
+		AA79CA682F88C03900AFFA19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -290,7 +290,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.userkei.RecipePage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.userkei.DiceRoller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,25 +301,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAD180592F86745B00D5A08C /* Build configuration list for PBXProject "RecipePage" */ = {
+		AA79CA562F88C03800AFFA19 /* Build configuration list for PBXProject "DiceRoller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAD180672F86745C00D5A08C /* Debug */,
-				AAD180682F86745C00D5A08C /* Release */,
+				AA79CA642F88C03900AFFA19 /* Debug */,
+				AA79CA652F88C03900AFFA19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAD180692F86745C00D5A08C /* Build configuration list for PBXNativeTarget "RecipePage" */ = {
+		AA79CA662F88C03900AFFA19 /* Build configuration list for PBXNativeTarget "DiceRoller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAD1806A2F86745C00D5A08C /* Debug */,
-				AAD1806B2F86745C00D5A08C /* Release */,
+				AA79CA672F88C03900AFFA19 /* Debug */,
+				AA79CA682F88C03900AFFA19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AAD180562F86745B00D5A08C /* Project object */;
+	rootObject = AA79CA532F88C03800AFFA19 /* Project object */;
 }
