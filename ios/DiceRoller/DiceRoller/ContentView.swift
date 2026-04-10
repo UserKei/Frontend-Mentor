@@ -8,17 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+  @State private var numberOfDices: Int = 1
+  
+  var body: some View {
+    VStack {
+      Text("Dice Roller")
+        .font(.largeTitle.lowercaseSmallCaps())
+      
+      HStack {
+        ForEach(1...numberOfDices, id: \.description) { _ in
+          DiceView()
         }
-        .padding()
+      }
+      
+      HStack {
+        Button("Remove Dice") {
+          withAnimation {
+            numberOfDices -= 1
+          }
+        }
+        .disabled(numberOfDices == 1)
+        
+        Button("Add Dice") {
+          withAnimation {
+            numberOfDices += 1
+          }
+        }
+        .disabled(numberOfDices == 5)
+      }
+      .padding()
     }
+    .padding()
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }
